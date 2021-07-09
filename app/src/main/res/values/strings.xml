@@ -1,0 +1,351 @@
+<resources>
+    <string name="app_name">3azra2</string>
+
+    <string name="agora_app_id">347a0c3dcb79493c9615908969377b07</string>
+
+    <string name="agora_access_token"></string>
+
+    <string name="agora_channel_name">PrivateChannel1</string>
+
+    <string name="public_channel_name">PublicChannel1</string>
+
+    <string name="get_started">Get started</string>
+    <string name="buy_coin_gift">Buy Coins and Gifts</string>
+    <string name="message_tutorial_0">Buy Coins and Gifts from store to share with \nyour favorite Agent, Use Coins to access \nPrivate Galleries, to have 1 on 1 calls</string>
+    <string name="message_tutorial_1">Tune into the Public Room. Participate in the \nlive feed, chat, interact and share Gifts with \nstreamers.</string>
+    <string name="message_tutorial_2">Choose from any of the Online Agents to \nchat and interact in 1 to 1 sessions.</string>
+    <string name="message_tutorial_3">Enjoy spicy chats and interact in 1 to 1 \nsessions.</string>
+    <string name="adult_private_room">Adult Private Rooms</string>
+    <string name="tutorial_start">Enjoy spicy chats and interact in to 1 sesions</string>
+
+    <string name="welcome_to">Welcome to,\n3azra2</string>
+    <string name="log_in">Log In</string>
+    <string name="sign_up">Sign Up</string>
+
+    <string name="username_email_phone">Username/Email/Phone</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="or">or</string>
+    <string name="login_facebook">Log in with Facebook</string>
+    <string name="login_google">Log in with Google</string>
+
+    <string name="don_t_have_account">Don\'t have an account?</string>
+
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="username">Username</string>
+    <string name="contact_number">Contact number</string>
+    <string name="email_address">Email address</string>
+    <string name="birthday">Birthday</string>
+    <string name="age">Age</string>
+    <string name="gender">Gender</string>
+
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+
+    <string name="signup_facebook">Sign up with Facebook</string>
+    <string name="signup_google">Sign up with Google</string>
+
+    <string name="have_account">Already have an account?</string>
+
+    <string name="enter_email_password_reset">Enter your registered email below to receive\npassword reset instruction</string>
+    <string name="remember_password">Remember password?</string>
+    <string name="send_password">Send password reset code</string>
+    <string name="send">Send</string>
+
+    <string name="enter_digit_code">Please enter 4-digit code we sent on\nto your email</string>
+    <string name="confirm">Confirm</string>
+    <string name="didnt_receive_link">Didn\'t receive link?</string>
+    <string name="resend">Resend</string>
+
+    <string name="password_has_reset">Password has been\nsuccessfully reset</string>
+    <string name="you_login_password">You can now log in using your new password</string>
+
+    <string name="free_coin_30">30 Free Coins</string>
+    <string name="share_free_coin">Get 30 free minutes for free when you\nshare app on Facebook!</string>
+    <string name="share">Share</string>
+    <string name="copy_link">Copy link</string>
+
+
+    <string name="facebook_app_id">309517490370365</string>
+    <string name="fb_login_protocol_scheme">fb309517490370365</string>
+
+
+    <string name="account">Account</string>
+    <string name="user">User</string>
+    <string name="agent">Agent</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="agree_with">Agree with our Terms of services &amp; Privacy policy</string>
+
+
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="select_avatar">Select an avatar from</string>
+
+    <string name="message_agree">You must agree with our Terms of services &amp; Privacy policy</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="home_second">Home Second</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="menu_public_room">Public Room</string>
+    <string name="menu_private_room">Private Room</string>
+    <string name="menu_contacts">Contacts</string>
+    <string name="menu_enter_room">Enter Rooms</string>
+    <string name="menu_store">Store</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_notifications">Notifications</string>
+    <string name="menu_logout">Log out</string>
+
+
+    <string name="menu_dashboard">Earning Dashboard</string>
+
+    <string name="wallet">Wallet</string>
+    <string name="history">History</string>
+    <string name="gifts">Gifts</string>
+
+
+    <!--    <string name=""></string>-->
+
+    <string name="message_first_name">Please input your first name</string>
+    <string name="message_nickname">Please input your nickname</string>
+    <string name="message_phone">Please input your phone number</string>
+    <string name="message_email">Please input your email address</string>
+    <string name="message_email_invalid">Invalid email address</string>
+    <string name="message_birthday">Please input your birthday</string>
+    <string name="message_age">Please input your age</string>
+    <string name="message_password">Please input your password</string>
+    <string name="message_gender">Please input your gender</string>
+    <string name="message_password_invalid">Password doesn\'t match</string>
+
+    <string name="message_wait">Please wait for a moment....</string>
+    <string name="message_failed_connect">Failed to connect to server!</string>
+    <string name="message_email_phone">Please input your email or phone number</string>
+    <string name="message_network">Please check network state.</string>
+    <string name="live_string">LIVE</string>
+    <string name="strlivestream">Livestream</string>
+    <string name="message_public_room">Tune into the livestream to live chat, interact \nand share gifts with the streamer.</string>
+    <string name="onechat">1 on 1 chat</string>
+    <string name="message_private_room">Choose from any of the online agent to chat \nand interact with in a 1 to 1 chat.</string>
+    <string name="adult_one_chat">Adult 1 on 1 chat</string>
+    <string name="menu_adult_private">Adult Private Room</string>
+    <string name="message_adult_private">Choose from any of the online agent to chat \nand interact with in an adult 1 to 1 chat.</string>
+    <string name="buy_coins">Buy Coins</string>
+    <string name="buy_coins_description">Purchase coins to access Private Calls, \nAdult Private Calls and Coin Gifts</string>
+    <string name="buy_gifts">Buy Gifts</string>
+    <string name="buy_money_gifts">Buy Money Gifts</string>
+    <string name="buy_coin_gifts">Buy Coin Gifts</string>
+    <string name="buy_coin_gift_description">Surprise your favourite Agents with \nCoin Gifts</string>
+    <string name="buy_money_gifts_description">Surprise your favourite Agents with \nMoney Gifts</string>
+    <string name="user_name">Harry Parker</string>
+    <string name="cool_cat">thecoolcat</string>
+    <string name="email">harryparker@email.com</string>
+    <string name="phone_number">+44 7123 456 789</string>
+    <string name="user_introduction">Bio type text here ipsum dolor sit amet, \nconsectetur adipiscing elit</string>
+    <string name="balances">Balances</string>
+    <string name="payment_history">Payments History</string>
+    <string name="minute_history">Minute History</string>
+    <string name="edit_profile">Edit profile</string>
+    <string name="account_settings">Account settings</string>
+    <string name="service_terms">Terms of service</string>
+    <string name="contact_us">Contact us</string>
+    <string name="done">Done</string>
+    <string name="name">Name</string>
+    <string name="bio">Bio</string>
+    <string name="bio_content">Write about yourself...</string>
+    <string name="str_email">Email</string>
+    <string name="change_password">Change password</string>
+    <string name="term_condition">Terms and Conditions</string>
+    <string name="terms_heading">1. Heading title 1</string>
+    <string name="term_heading_content">This \n is \n my\n introduction.</string>
+    <string name="str_message">Message</string>
+    <string name="message_hint">What can we help you with?</string>
+    <string name="type_message">Type Message</string>
+    <string name="send_message">Send message</string>
+    <string name="agent_list">Agent List</string>
+    <string name="call_me">Call Me</string>
+    <string name="notify_me">Notify Me</string>
+    <string name="join_me">Join Me</string>
+    <string name="buy_coins_intro">Surprise your favourite Agents with Gifts</string>
+    <string name="title_activity_public_room">PublicRoomActivity</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="str_hi">Hi!</string>
+    <string name="str_hello">Hello!</string>
+    <string name="current_password">Enter current password</string>
+    <string name="new_password">New password</string>
+    <string name="confirm_new_password">Confirm new password</string>
+    <string name="upload_profile">Upload profile picture</string>
+
+    <string name="online">Online</string>
+    <string name="busy">Busy</string>
+    <string name="offline">Offline</string>
+    <string name="live">Live</string>
+
+    <string name="coins">coins</string>
+    <string name="buy">BUY</string>
+    <string name="hide_comments">Hide comments</string>
+    <string name="show_comments">Show comments</string>
+
+    <string name="call_ended">Call Ended</string>
+    <string name="send_tip">Send Tip</string>
+    <string name="video_call">Videocall</string>
+    <string name="voice_call">Voicecall</string>
+    <string name="call_type_selection">What kind of call do you want?</string>
+    <string name="tip_me">Tip Me</string>
+    <string name="leave_review">Leave Review</string>
+    <string name="unlock_galley">Unlock Private Gallery</string>
+    <string name="private_galley_description">Unlock Madison\'s Private Gallery for spicy pics!</string>
+    <string name="galley">Gallery</string>
+    <string name="about_me">About Me</string>
+    <string name="interests">Interests</string>
+    <string name="contents_about_me">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel purus id mauris viverra dictum. Ut efficitur nulla sed elit ornareporti.</string>
+    <string name="select_payment">Select Payment Method</string>
+    <string name="continu">Continue</string>
+    <string name="card_payment">Card Payment</string>
+    <string name="card_number">Card number...</string>
+    <string name="owner_name">Owner name</string>
+    <string name="transfer_money">Transfer Money</string>
+    <string name="add_card">Add Card?</string>
+    <string name="cvc">CVC</string>
+    <string name="exp_date">Exp.date</string>
+    <string name="paypal_payment">Paypal Payment</string>
+    <string name="enter_amount">Enter Amount</string>
+    <string name="share_gift">Share Gift with...</string>
+    <string name="search_agents">Search Agents</string>
+    <string name="notification_sent">Notification sent to</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+    <string name="review_rating"><![CDATA[Reviews & Ratings]]></string>
+    <string name="review_explain">Rate and Review your experience</string>
+    <string name="spicy_level">Rate the spicy level</string>
+    <string name="write_experience">Write about your experience.</string>
+    <string name="send_review">Send Review</string>
+    <string name="review_sent">Review sent!</string>
+    <string name="thank_review">Thank you for sending your review.</string>
+    <string name="she_declined">She declined your request!</string>
+    <!-- Calling Activity -->
+    <string name="receiving_call">Incoming&#8230;</string>
+    <string name="calling_out">Calling&#8230;</string>
+    <string name="token_invalid">Your login information is invalid.\nPlease logout and restart app.</string>
+    <string name="something_wrong">Something is wrong. Please try again later.</string>
+    <string name="operation_success">The operation succeeded</string>
+
+    <string name="check_coin_balance">Check Coin Balance</string>
+    <string name="coin_purchased">%d Coins purchased</string>
+    <string name="you_sent">You Sent </string>
+    <string name="gift_to">Gift To </string>
+    <string name="you_purchased_">You have purchased %d Coins!</string>
+    <string name="successfully_sent_gift">Successfully Sent Gift - Congratulation!</string>
+    <string name="coin_check_profile">To see your Coin Balance check your profile.</string>
+    <string name="coin_gift">Coin Gift</string>
+    <string name="money_gift">Money Gift</string>
+    <string name="send_another_gift">Send Another Gift?</string>
+    <string name="run_out_coin">You have run \nout of coins</string>
+    <string name="low_balance">Your coin balance is low to contact her.</string>
+
+
+</resources>

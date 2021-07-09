@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/slCoinGifts"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.store.BuyCoinGiftsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/common_padding_medium"
+            android:layout_marginTop="@dimen/common_padding_medium"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/coin_gift"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/buy_coin_gifts"
+                android:layout_marginStart="@dimen/common_padding_medium"
+                android:textColor="@color/black_text"
+                android:textSize="@dimen/font_medium2"
+                android:fontFamily="@font/poppins_semibold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/common_padding_medium"
+            android:layout_marginTop="@dimen/common_padding_small2"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="@dimen/font_small2"
+            android:text="@string/buy_coins_intro" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvCoinGiftList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/common_padding_medium"
+            android:layout_marginEnd="@dimen/common_padding_medium"
+            android:layout_marginTop="@dimen/common_padding_large"
+            android:layout_marginBottom="@dimen/common_padding_medium"
+            />
+
+    </LinearLayout>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

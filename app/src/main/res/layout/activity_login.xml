@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.welcome.LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/common_padding_medium"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/log_in"
+                android:textColor="@color/redTextColor"
+                android:textSize="@dimen/font_huge1"
+                android:fontFamily="@font/poppins_semibold"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_box_height"
+                android:layout_marginTop="@dimen/common_padding_large3"
+                app:cardCornerRadius="@dimen/common_padding_small2"
+                app:cardBackgroundColor="@color/greyEditColor">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/common_padding_small2"
+                    android:layout_marginEnd="@dimen/common_padding_small2"
+                    android:background="@null"
+                    android:hint="@string/username_email_phone"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="30"
+                    android:singleLine="true"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey_500"
+                    android:textSize="@dimen/font_medium"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_box_height"
+                android:layout_marginTop="@dimen/common_padding_small2"
+                app:cardCornerRadius="@dimen/common_padding_small2"
+                app:cardBackgroundColor="@color/greyEditColor">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/etPasswordLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/common_padding_small2"
+                    android:layout_marginEnd="@dimen/common_padding_small2"
+                    android:layout_gravity="center_vertical"
+                    app:passwordToggleEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="@string/password"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textSize="@dimen/font_medium"
+                        android:inputType="textPassword"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tvForgot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_padding_small1"
+                android:layout_gravity="end"
+                android:text="@string/forgot_password"
+                android:textColor="#0084fe"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="@dimen/font_medium" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvLogin"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_box_height"
+                android:layout_marginTop="@dimen/common_padding_large1"
+                app:cardBackgroundColor="@color/btnDisableColor"
+                app:cardCornerRadius="@dimen/common_padding_small2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/log_in"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textColor="@color/white_text"
+                    android:textSize="@dimen/font_medium" />
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_padding_medium1"
+                android:gravity="center_vertical"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/grey_500" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/common_padding_small2"
+                    android:layout_marginEnd="@dimen/common_padding_small2"
+                    android:text="@string/or"
+                    android:textColor="@color/grey_500"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/grey_500" />
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvFacebook"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_box_height"
+                android:layout_marginTop="@dimen/common_padding_medium1"
+                app:cardCornerRadius="@dimen/common_padding_small2"
+                app:cardBackgroundColor="@color/btnFacebookColor">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/common_padding_medium2"
+                    android:layout_marginEnd="@dimen/common_padding_medium2"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="f"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_large3"
+                        android:fontFamily="sans-serif-medium"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="@string/login_facebook"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_medium"
+                        android:fontFamily="@font/poppins_semibold"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <LinearLayout
+                android:id="@+id/llGoogle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_box_height"
+                android:background="@drawable/google_round_gradient"
+                android:layout_marginTop="@dimen/common_padding_medium1"
+                android:paddingStart="@dimen/common_padding_medium2"
+                android:paddingEnd="@dimen/common_padding_medium2"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="G"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_large3"
+                    android:fontFamily="sans-serif-medium"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="@string/login_google"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_medium"
+                    android:fontFamily="@font/poppins_semibold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_padding_medium1"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/don_t_have_account"
+                    android:textColor="#339AFC"
+                    android:textSize="@dimen/font_medium"
+                    android:fontFamily="@font/poppins_regular"/>
+
+                <TextView
+                    android:id="@+id/tvSignup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/common_padding_small1"
+                    android:text="@string/sign_up"
+                    android:textColor="#0280EC"
+                    android:textSize="@dimen/font_medium"
+                    android:fontFamily="@font/poppins_medium"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="5"
+    tools:context=".ui.welcome.WelcomeActivity">
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_to"
+            android:textAlignment="center"
+            android:textColor="@color/redTextColor"
+            android:textSize="@dimen/font_huge1"
+            android:fontFamily="@font/poppins_semibold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/common_padding_large1"
+        android:layout_marginStart="@dimen/common_padding_medium"
+        android:layout_marginEnd="@dimen/common_padding_medium"
+        android:layout_weight="2"
+        android:gravity="center_horizontal|bottom"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/common_padding_small2"
+            app:cardBackgroundColor="@color/btnStartColor">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/common_padding_medium"
+                android:paddingBottom="@dimen/common_padding_medium"
+                android:text="@string/log_in"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_medium"
+                android:textAlignment="center"
+                android:fontFamily="@font/poppins_semibold"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tvSignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_padding_small2"
+            android:paddingTop="@dimen/common_padding_medium"
+            android:paddingBottom="@dimen/common_padding_medium"
+            android:background="@drawable/purple_round_gradient"
+            android:text="@string/sign_up"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_medium"
+            android:textAlignment="center"
+            android:fontFamily="@font/poppins_semibold"/>
+
+    </LinearLayout>
+
+</LinearLayout>

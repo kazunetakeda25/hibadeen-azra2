@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="@dimen/common_padding_medium">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivProfile"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/elsa"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="0.9"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="MissingConstraints" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvStatusAlarm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_padding_small2"
+                android:layout_marginStart="@dimen/common_padding_small1"
+                android:background="@color/white"
+                app:cardCornerRadius="@dimen/common_padding_small1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/common_padding_small2"
+                    android:paddingEnd="@dimen/common_padding_small2"
+                    android:gravity="center_vertical" >
+
+                    <ImageView
+                        android:id="@+id/ivStatus"
+                        android:layout_width="@dimen/common_padding_small2"
+                        android:layout_height="@dimen/common_padding_small2"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/online_dot" />
+
+                    <TextView
+                        android:id="@+id/tvStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/common_padding_small1"
+                        android:text="@string/online"
+                        android:textSize="@dimen/font_small1"
+                        android:fontFamily="@font/poppins_light"
+                        android:textColor="@color/green_A400" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/ivStatus2"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginStart="@dimen/common_padding_small2"
+                app:srcCompat="@drawable/online_dot" />
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/common_padding_small0"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Madison"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_medium" />
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/ccp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:ccp_showNameCode="false"
+                app:ccp_showPhoneCode="false"
+                app:ccp_showArrow="false"
+                app:ccp_clickable="false"
+                android:focusable="false"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivCallType"
+                android:layout_width="@dimen/common_padding_medium1"
+                android:layout_height="@dimen/common_padding_medium1"
+                android:src="@drawable/camera_on_green"/>
+
+            <TextView
+                android:id="@+id/tvPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/common_padding_small1"
+                android:text="20"
+                android:textSize="@dimen/font_small2"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/pink_A400"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/coin_heart"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/common_padding_small1"
+                android:text="/min"
+                android:textSize="@dimen/font_small2"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/pink_A400"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llAction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/purple_oval_gradient"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/common_padding_small0"
+            android:paddingStart="@dimen/common_padding_medium1"
+            android:paddingEnd="@dimen/common_padding_medium1">
+
+            <ImageView
+                android:id="@+id/ivAction"
+                android:layout_width="@dimen/common_padding_medium1"
+                android:layout_height="@dimen/common_padding_medium1"
+                app:srcCompat="@drawable/phone_24" />
+
+            <TextView
+                android:id="@+id/tvAction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/common_padding_small1"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/call_me"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_medium" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_padding_small1"
+            android:layout_marginBottom="@dimen/common_padding_small1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/common_padding_medium"
+                android:layout_height="@dimen/common_padding_medium"
+                app:srcCompat="@drawable/profile_small" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/common_padding_small1"
+                android:text="View Profile"
+                android:fontFamily="@font/poppins_light"
+                android:textSize="@dimen/font_small1"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="@dimen/common_padding_medium"
+    android:layout_marginStart="@dimen/common_padding_medium"
+    android:layout_marginEnd="@dimen/common_padding_medium"
+    app:cardCornerRadius="@dimen/common_padding_small2">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivImage"
+            android:layout_width="@dimen/common_padding_medium1"
+            android:layout_height="@dimen/common_padding_medium1"
+            android:src="@drawable/coin_heart"
+            android:layout_marginStart="@dimen/common_padding_medium1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ivImage"
+            android:layout_marginTop="@dimen/common_padding_medium"
+            android:layout_marginStart="@dimen/common_padding_medium"
+            android:text=""
+            android:textColor="@color/black_text"
+            android:textSize="@dimen/font_small2"
+            android:fontFamily="@font/poppins_semibold"
+            />
+
+        <TextView
+            android:id="@+id/tvContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ivImage"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle"
+            android:layout_marginTop="@dimen/common_padding_small0"
+            android:layout_marginBottom="@dimen/common_padding_medium"
+            android:layout_marginStart="@dimen/common_padding_medium"
+            android:text=""
+            android:textColor="@color/black_text"
+            android:textSize="@dimen/font_small0"
+            android:fontFamily="@font/poppins_regular"
+            />
+
+        <TextView
+            android:id="@+id/tvAttach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginEnd="@dimen/common_padding_medium"
+            android:text=""
+            android:textColor="@color/black_text"
+            android:textSize="@dimen/font_small2"
+            android:fontFamily="@font/poppins_medium"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

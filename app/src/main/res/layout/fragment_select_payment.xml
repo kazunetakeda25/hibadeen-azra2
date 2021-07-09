@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.store.SelectPaymentFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/common_padding_medium">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/chevron_left"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/common_padding_small2"
+                android:layout_marginTop="@dimen/common_padding_small2"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <ImageView
+                        android:id="@+id/ivGiftSort"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="@dimen/common_padding_medium"
+                        android:layout_marginTop="@dimen/common_padding_medium1"
+                        android:layout_marginBottom="@dimen/common_padding_medium1"
+                        android:src="@drawable/gift"/>
+
+                    <TextView
+                        android:id="@+id/tvContent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="50 coins"
+                        android:layout_toRightOf="@+id/ivGiftSort"
+                        android:layout_marginStart="@dimen/common_padding_small2"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/font_small2"
+                        android:textColor="#FF9800"
+                        android:fontFamily="@font/poppins_semibold"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$49.99"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/blue_500"
+                        android:textSize="@dimen/font_small2"
+                        android:fontFamily="@font/poppins_medium"
+                        android:layout_marginEnd="@dimen/common_padding_small2"
+                        />
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/common_padding_small2"
+                android:layout_marginTop="@dimen/common_padding_medium1"
+                android:layout_marginStart="@dimen/common_padding_large1"
+                android:layout_marginEnd="@dimen/common_padding_large1"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/credit_card"
+                        android:layout_marginTop="@dimen/common_padding_medium1"
+                        android:layout_gravity="center_horizontal"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/select_payment"
+                        android:textColor="@color/black_text"
+                        android:textSize="@dimen/font_medium2"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/common_padding_medium"
+                        android:fontFamily="@font/poppins_semibold"/>
+
+                    <RadioGroup
+                        android:id="@+id/rgPayment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/common_padding_medium1"
+                        >
+
+                        <RadioButton
+                            android:id="@+id/rbVisa"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="@dimen/common_padding_medium"
+                            android:drawableRight="@drawable/visa"/>
+                        <RadioButton
+                            android:id="@+id/rbMasterCard"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="@dimen/common_padding_medium"
+                            android:drawableRight="@drawable/mastercard_2"/>
+                        <RadioButton
+                            android:id="@+id/rbPaypal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="@dimen/common_padding_medium"
+                            android:drawableRight="@drawable/paypal_icon"/>
+                        <RadioButton
+                            android:id="@+id/rbGoogle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="@dimen/common_padding_medium"
+                            android:layout_marginBottom="@dimen/common_padding_medium"
+                            android:drawableRight="@drawable/google_icon"/>
+
+
+
+                    </RadioGroup>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/btnContinue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardBackgroundColor="@color/grey_400"
+                        android:layout_marginStart="@dimen/common_padding_medium"
+                        android:layout_marginEnd="@dimen/common_padding_medium"
+                        android:layout_marginBottom="@dimen/common_padding_medium2"
+                        android:layout_marginTop="@dimen/common_padding_medium2"
+                        app:cardCornerRadius="@dimen/common_padding_small2">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/continu"
+                            android:paddingTop="@dimen/common_padding_medium1"
+                            android:paddingBottom="@dimen/common_padding_medium1"
+                            android:textColor="@color/white_text"
+                            android:textAlignment="center"
+                            android:enabled="false"
+                            />
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

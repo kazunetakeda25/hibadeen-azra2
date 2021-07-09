@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/common_padding_medium"
+    android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CallEndBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/red_700"
+        android:onClick="onEndClicked"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardCornerRadius="@dimen/common_padding_small2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/call_ended"
+            android:layout_marginStart="@dimen/common_padding_medium2"
+            android:layout_marginEnd="@dimen/common_padding_medium2"
+            android:layout_marginTop="@dimen/common_padding_small2"
+            android:layout_marginBottom="@dimen/common_padding_small2"
+            android:textSize="@dimen/font_medium2"
+            android:textColor="@color/white_text"
+            android:fontFamily="@font/poppins_regular"/>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

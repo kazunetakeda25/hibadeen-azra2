@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00bff3</color>
+    <color name="colorPrimaryDark">#00617c</color>
+    <color name="colorAccent">#6adbf9</color>
+
+    <color name="redTextColor">#f02a58</color>
+    <color name="btnStartColor">#603BF8</color>
+    <color name="greyEditColor">#f7f7f7</color>
+
+    <color name="btnDisableColor">#bfb1fc</color>
+    <color name="btnEnableColor">#603bf8</color>
+    <color name="btnFacebookColor">#167BFF</color>
+    <color name="list_item_back_trans">#227496FF</color>
+    <color name="transWhite">#80FFFFFF</color>
+    <color name="transGray">#50DDDDDD</color>
+    <color name="transBlack">#aa101010</color>
+
+    <color name="onlineColor">@color/green_A400</color>
+    <color name="offlineColor">#DF2363</color>
+    <color name="busyColor">#FF9800</color>
+
+    <!-- Chat Activity -->
+    <color name="localBackground">#28262C</color>
+    <color name="remoteBackground">#0A090B</color>
+    <color name="gray_text">#707070</color>
+    <color name="notf_card_back">#FFF6EF</color>
+    <color name="balance_card_back">#F9F7EA</color>
+    <color name="white_green">#EDF9EA</color>
+
+    <color name="blue">#007AFF</color>
+    <color name="blue_medium">#44A2FC</color>
+    <color name="blue_light">#0ECFFF</color>
+    <color name="blue_alpha">#9CD9FF</color>
+    <color name="blue_alpha_2">#94c4ff</color>
+
+
+</resources>

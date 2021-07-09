@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/nav_choose_room"
+        android:icon="@drawable/home"
+        android:title="@null" />
+    <item
+        android:id="@+id/nav_store"
+        android:icon="@drawable/store"
+        android:title="@null" />
+    <item
+        android:id="@+id/nav_notification"
+        android:icon="@drawable/bell"
+        android:title="@null" />
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/profile"
+        android:title="@null" />
+</menu>

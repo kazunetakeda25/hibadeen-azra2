@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.tutorial.TutorialActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/common_padding_large3"
+        android:layout_marginEnd="@dimen/common_padding_large3"
+
+        android:layout_marginBottom="@dimen/common_padding_medium2"
+        app:cardCornerRadius="@dimen/common_padding_small2"
+        app:cardBackgroundColor="@color/btnStartColor">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/common_padding_large3"
+            android:paddingTop="@dimen/common_padding_medium"
+            android:paddingEnd="@dimen/common_padding_large3"
+            android:paddingBottom="@dimen/common_padding_medium"
+            android:text="@string/get_started"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_medium" />
+
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tlIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/cvStart"
+        android:layout_marginBottom="@dimen/common_padding_medium1"
+        app:tabBackground="@drawable/tab_pager_selector"
+        app:tabGravity="center"
+        app:tabIndicatorHeight="0dp"/>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/common_padding_medium1"
+        android:layout_above="@id/tlIndicator"/>
+
+</RelativeLayout>

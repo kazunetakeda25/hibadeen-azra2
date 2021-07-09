@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/user_navigation"
+    app:startDestination="@+id/nav_choose_room">
+
+    <!--Choose Room-->
+    <fragment
+        android:id="@+id/nav_choose_room"
+        android:name="com.azra2.ui.mainfrag.ChooseRoomFragment"
+        android:label="@string/menu_enter_room"
+        tools:layout="@layout/fragment_choose_room" >
+        <action
+            android:id="@+id/action_nav_choose_room_to_agentListFragment"
+            app:destination="@id/agentListFragment" />
+    </fragment>
+
+    <!--Store-->
+    <fragment
+        android:id="@+id/nav_store"
+        android:name="com.azra2.ui.mainfrag.StoreFragment"
+        android:label="@string/menu_store"
+        tools:layout="@layout/fragment_store" >
+        <action
+            android:id="@+id/action_store_to_buyCoins"
+            app:destination="@id/buyCoinsFragment"/>
+        <action
+            android:id="@+id/action_store_to_buyGifts"
+            app:destination="@id/buyGiftsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/buyCoinsFragment"
+        android:name="com.azra2.ui.store.BuyCoinsFragment"
+        android:label="@string/buy_coins"
+        tools:layout="@layout/fragment_buy_coins" >
+        <action
+            android:id="@+id/action_buyCoinsFragment_to_nav_profile"
+            app:destination="@id/nav_profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/buyGiftsFragment"
+        android:name="com.azra2.ui.store.BuyGiftsFragment"
+        android:label="@string/buy_gifts"
+        tools:layout="@layout/fragment_buy_gifts">
+        <action
+            android:id="@+id/action_buyGifts_to_buyMoneyGifts"
+            app:destination="@id/buyMoneyGiftsFragment" />
+        <action
+            android:id="@+id/action_buyGifts_to_buyCoinGifts"
+            app:destination="@id/buyCoinGiftsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/buyMoneyGiftsFragment"
+        android:name="com.azra2.ui.store.BuyMoneyGiftsFragment"
+        android:label="@string/buy_money_gifts"
+        tools:layout="@layout/fragment_buy_money_gifts" >
+        <action
+            android:id="@+id/action_buyMoneyGiftsFragment_to_shareGiftFragment"
+            app:destination="@id/shareGiftFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/buyCoinGiftsFragment"
+        android:name="com.azra2.ui.store.BuyCoinGiftsFragment"
+        android:label="@string/buy_coin_gifts"
+        tools:layout="@layout/fragment_buy_coin_gifts" >
+        <action
+            android:id="@+id/action_buyCoinGiftsFragment_to_shareGiftFragment"
+            app:destination="@id/shareGiftFragment" />
+    </fragment>
+
+    <!--Notification-->
+    <fragment
+        android:id="@+id/nav_notification"
+        android:name="com.azra2.ui.mainfrag.NotificationsFragment"
+        android:label="@string/menu_notifications"
+        tools:layout="@layout/fragment_notifications" />
+
+    <!--Profile-->
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.azra2.ui.mainfrag.ProfileFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_nav_profile_to_profileSettingsFragment"
+            app:destination="@id/profileSettingsFragment" />
+        <action
+            android:id="@+id/action_nav_profile_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileSettingsFragment"
+        android:name="com.azra2.ui.profile.ProfileSettingsFragment"
+        android:label="@string/action_settings"
+        tools:layout="@layout/fragment_profile_settings">
+        <action
+            android:id="@+id/action_profileSettingsFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+        <action
+            android:id="@+id/action_profileSettingsFragment_to_accountSettingsFragment"
+            app:destination="@id/accountSettingsFragment" />
+        <action
+            android:id="@+id/action_profileSettingsFragment_to_termsOfServiceFragment"
+            app:destination="@id/termsOfServiceFragment" />
+        <action
+            android:id="@+id/action_profileSettingsFragment_to_contactUsFragment"
+            app:destination="@id/contactUsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.azra2.ui.profile.EditProfileFragment"
+        android:label="@string/edit_profile"
+        tools:layout="@layout/fragment_edit_profile" >
+        <action
+            android:id="@+id/action_editProfileFragment_to_nav_profile"
+            app:destination="@id/nav_profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/accountSettingsFragment"
+        android:name="com.azra2.ui.profile.AccountSettingsFragment"
+        android:label="@string/account_settings"
+        tools:layout="@layout/fragment_account_settings" >
+        <action
+            android:id="@+id/action_accountSettingsFragment_to_emailSettingFragment"
+            app:destination="@id/emailSettingFragment" />
+        <action
+            android:id="@+id/action_accountSettingsFragment_to_passwordSettingFragment"
+            app:destination="@id/passwordSettingFragment" />
+        <action
+            android:id="@+id/action_accountSettingsFragment_to_cntctNmbrSettingFragment"
+            app:destination="@id/cntctNmbrSettingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/contactUsFragment"
+        android:name="com.azra2.ui.profile.ContactUsFragment"
+        android:label="@string/contact_us"
+        tools:layout="@layout/fragment_contact_us" />
+    <fragment
+        android:id="@+id/termsOfServiceFragment"
+        android:name="com.azra2.ui.profile.TermsOfServiceFragment"
+        android:label="@string/service_terms"
+        tools:layout="@layout/fragment_terms_of_service" />
+    <fragment
+        android:id="@+id/emailSettingFragment"
+        android:name="com.azra2.ui.profile.EmailSettingFragment"
+        android:label="fragment_email_setting"
+        tools:layout="@layout/fragment_email_setting" >
+        <action
+            android:id="@+id/action_emailSettingFragment_to_nav_profile"
+            app:destination="@id/nav_profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/passwordSettingFragment"
+        android:name="com.azra2.ui.profile.PasswordSettingFragment"
+        android:label="fragment_password_setting"
+        tools:layout="@layout/fragment_password_setting" >
+        <action
+            android:id="@+id/action_passwordSettingFragment_to_nav_profile"
+            app:destination="@id/nav_profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/cntctNmbrSettingFragment"
+        android:name="com.azra2.ui.profile.CntctNmbrSettingFragment"
+        android:label="fragment_cntct_nmbr_setting"
+        tools:layout="@layout/fragment_cntct_nmbr_setting" >
+        <action
+            android:id="@+id/action_cntctNmbrSettingFragment_to_nav_profile"
+            app:destination="@id/nav_profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectPaymentFragment"
+        android:name="com.azra2.ui.store.SelectPaymentFragment"
+        android:label="fragment_select_payment"
+        tools:layout="@layout/fragment_select_payment" />
+    <fragment
+        android:id="@+id/agentListFragment"
+        android:name="com.azra2.ui.room.AgentListFragment"
+        android:label="fragment_agent_list"
+        tools:layout="@layout/fragment_agent_list" >
+
+        <argument
+            android:name="roomType"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_agentListFragment_to_agentProfileFragment"
+            app:destination="@id/agentProfileFragment" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/agentProfileFragment"
+        android:name="com.azra2.ui.room.AgentProfileFragment"
+        android:label="fragment_agent_profile"
+        tools:layout="@layout/fragment_agent_profile" >
+        <action
+            android:id="@+id/action_agentProfileFragment_to_agentListFragment"
+            app:destination="@id/agentListFragment" />
+        <action
+            android:id="@+id/action_agentProfileFragment_to_reviewFragment"
+            app:destination="@id/reviewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/shareGiftFragment"
+        android:name="com.azra2.ui.store.ShareGiftFragment"
+        android:label="fragment_share_gift"
+        tools:layout="@layout/fragment_share_gift" >
+        <argument
+            android:name="sort"
+            app:argType="string"/>
+        <argument
+            android:name="coinCount"
+            app:argType="string"/>
+        <argument
+            android:name="moneyAmount"
+            app:argType="string"/>
+        <action
+            android:id="@+id/action_shareGiftFragment_to_buyGiftsFragment"
+            app:destination="@id/buyGiftsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cardPaymentFragment"
+        android:name="com.azra2.ui.store.CardPaymentFragment"
+        android:label="fragment_card_payment"
+        tools:layout="@layout/fragment_card_payment" />
+    <fragment
+        android:id="@+id/paypalPaymentFragment"
+        android:name="com.azra2.ui.store.PaypalPaymentFragment"
+        android:label="fragment_paypal_payment"
+        tools:layout="@layout/fragment_paypal_payment" />
+    <fragment
+        android:id="@+id/reviewFragment"
+        android:name="com.azra2.ui.room.ReviewFragment"
+        android:label="fragment_review"
+        tools:layout="@layout/fragment_review" >
+        <action
+            android:id="@+id/action_reviewFragment_to_agentProfileFragment"
+            app:destination="@id/agentProfileFragment" />
+    </fragment>
+
+
+</navigation>

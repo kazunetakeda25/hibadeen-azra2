@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.store.CardPaymentFragment">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/chevron_left"
+        android:layout_marginStart="@dimen/common_padding_medium"
+        android:layout_marginTop="@dimen/common_padding_medium"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/common_padding_medium2"
+        app:cardCornerRadius="@dimen/common_padding_small2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/common_padding_medium">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/common_padding_medium">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/credit_card"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/card_payment"
+                    android:textColor="@color/black_text"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="@dimen/font_medium2"
+                    android:layout_marginStart="@dimen/common_padding_small2"
+                    />
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_padding_medium2"
+                android:paddingStart="@dimen/common_padding_medium"
+                android:paddingTop="@dimen/common_padding_medium2"
+                app:cardCornerRadius="@dimen/common_padding_medium"
+                app:cardBackgroundColor="@color/notf_card_back">
+
+                <EditText
+                    android:id="@+id/etCardNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="@string/card_number"
+                    android:inputType="number"
+                    android:paddingStart="@dimen/common_padding_medium"
+                    android:paddingTop="@dimen/common_padding_medium1"
+                    android:paddingBottom="@dimen/common_padding_medium1"
+                    android:textColor="@color/black_text" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_padding_medium"
+                android:paddingStart="@dimen/common_padding_medium"
+                android:paddingTop="@dimen/common_padding_medium2"
+                app:cardCornerRadius="@dimen/common_padding_medium"
+                app:cardBackgroundColor="@color/notf_card_back">
+
+                <EditText
+                    android:id="@+id/etOwnerName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="@string/owner_name"
+                    android:inputType="text"
+                    android:paddingStart="@dimen/common_padding_medium"
+                    android:paddingTop="@dimen/common_padding_medium1"
+                    android:paddingBottom="@dimen/common_padding_medium1"
+                    android:textColor="@color/black_text" />
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="@dimen/common_padding_small2"
+                    android:layout_marginTop="@dimen/common_padding_medium"
+                    android:paddingStart="@dimen/common_padding_medium"
+                    android:paddingTop="@dimen/common_padding_medium2"
+                    app:cardCornerRadius="@dimen/common_padding_medium"
+                    app:cardBackgroundColor="@color/notf_card_back">
+
+                    <EditText
+                        android:id="@+id/etExpDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:hint="@string/exp_date"
+                        android:inputType="date"
+                        android:paddingStart="@dimen/common_padding_medium"
+                        android:paddingTop="@dimen/common_padding_medium1"
+                        android:paddingBottom="@dimen/common_padding_medium1"
+                        android:textColor="@color/black_text"
+                        android:textFontWeight="1" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="@dimen/common_padding_small2"
+                    android:layout_marginTop="@dimen/common_padding_medium"
+                    android:paddingStart="@dimen/common_padding_medium"
+                    android:paddingTop="@dimen/common_padding_medium2"
+                    app:cardCornerRadius="@dimen/common_padding_medium"
+                    app:cardBackgroundColor="@color/notf_card_back">
+
+                    <EditText
+                        android:id="@+id/etCvc"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:hint="@string/cvc"
+                        android:inputType="number"
+                        android:paddingStart="@dimen/common_padding_medium"
+                        android:paddingTop="@dimen/common_padding_medium1"
+                        android:paddingBottom="@dimen/common_padding_medium1"
+                        android:textColor="@color/black_text" />
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvTransfer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_padding_large2"
+                app:cardCornerRadius="@dimen/common_padding_medium"
+                app:cardBackgroundColor="@color/grey_400">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@color/white_text"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:paddingTop="@dimen/common_padding_medium1"
+                    android:paddingBottom="@dimen/common_padding_medium1"
+                    android:text="@string/transfer_money" />
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/llAddCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/add_blue" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/common_padding_small2"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/add_card"
+            android:textColor="@color/blue_500" />
+    </LinearLayout>
+
+</LinearLayout>

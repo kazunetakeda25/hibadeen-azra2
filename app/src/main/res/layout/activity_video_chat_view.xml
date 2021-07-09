@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_video_chat_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.room.VideoChatViewActivity">
+
+    <RelativeLayout
+        android:id="@+id/remote_video_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/remoteBackground">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/icon_padding"/>
+        <RelativeLayout
+            android:id="@+id/icon_padding"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/remote_back_icon_margin_bottom"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/local_preview_width"
+        android:layout_height="@dimen/local_preview_height"
+        app:cardCornerRadius="@dimen/common_padding_small2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="@dimen/local_preview_margin_right"
+        android:layout_marginRight="@dimen/local_preview_margin_right"
+        android:layout_marginTop="@dimen/local_preview_margin_top"
+        app:cardBackgroundColor="@color/localBackground">
+
+        <FrameLayout
+            android:id="@+id/local_video_view_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/localBackground"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvBtns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/common_padding_large2"
+        android:layout_marginEnd="@dimen/common_padding_large2"
+        android:layout_marginBottom="@dimen/common_padding_large2"
+        app:cardCornerRadius="@dimen/common_padding_small2"
+        app:cardBackgroundColor="@color/transGray">
+        
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/common_padding_medium">
+
+
+            <ImageView
+                android:id="@+id/ivMic"
+                android:layout_width="@dimen/common_padding_large1"
+                android:layout_height="@dimen/common_padding_large1"
+                android:onClick="onMicOffClicked"
+                android:src="@drawable/mic_24"
+                android:padding="@dimen/common_padding_small1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/ivCamera"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ivCamera"
+                android:layout_width="@dimen/common_padding_large1"
+                android:layout_height="@dimen/common_padding_large1"
+                android:onClick="onCameraDisabledClicked"
+                android:src="@drawable/videocam_24"
+                android:padding="@dimen/common_padding_small1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/ivVolume"
+                app:layout_constraintStart_toEndOf="@id/ivMic"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ivVolume"
+                android:layout_width="@dimen/common_padding_large1"
+                android:layout_height="@dimen/common_padding_large1"
+                android:onClick="onVolumeOffClicked"
+                android:src="@drawable/volume_up_24"
+                android:padding="@dimen/common_padding_small1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/ivSwitch"
+                app:layout_constraintStart_toEndOf="@id/ivCamera"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ivSwitch"
+                android:layout_width="@dimen/common_padding_large1"
+                android:layout_height="@dimen/common_padding_large1"
+                android:onClick="onSwitchCameraClicked"
+                android:src="@drawable/cached_24"
+                android:padding="@dimen/common_padding_small1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/ivEndCall"
+                app:layout_constraintStart_toEndOf="@id/ivVolume"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ivEndCall"
+                android:layout_width="@dimen/common_padding_large1"
+                android:layout_height="@dimen/common_padding_large1"
+                android:onClick="onCallClicked"
+                android:src="@drawable/btn_endcall"
+                android:padding="@dimen/common_padding_small0"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ivSwitch"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/cvBtns"
+        android:layout_alignTop="@+id/cvBtns"
+        android:layout_marginTop="@dimen/common_reverse_padding_large2"
+        app:cardBackgroundColor="@color/transGray"
+        app:cardCornerRadius="@dimen/common_padding_small2">
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00:00"
+            android:textColor="@color/white_text"
+            android:textSize="@dimen/font_medium"
+            android:layout_marginStart="@dimen/common_padding_medium"
+            android:layout_marginEnd="@dimen/common_padding_medium"
+            android:layout_marginTop="@dimen/common_padding_small1"
+            android:layout_marginBottom="@dimen/common_padding_small1"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvSendTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/cvBtns"
+        android:layout_alignEnd="@+id/cvBtns"
+        android:layout_marginTop="@dimen/common_reverse_padding_large2"
+        app:cardCornerRadius="@dimen/common_padding_small2"
+        app:cardBackgroundColor="@color/transGray">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_padding_small1"
+            android:layout_marginBottom="@dimen/common_padding_small1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/send_tip"
+                android:textSize="@dimen/font_medium"
+                android:textColor="@color/white_text"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginStart="@dimen/common_padding_small2"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/common_padding_small2"
+                android:layout_marginEnd="@dimen/common_padding_small2"
+                android:src="@drawable/coin_heart"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

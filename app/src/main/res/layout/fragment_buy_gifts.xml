@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+tools:context=".ui.store.BuyGiftsFragment">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginStart="@dimen/common_padding_medium"
+    android:layout_marginEnd="@dimen/common_padding_medium"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/gifts"
+        android:textColor="@color/black_text"
+        android:textSize="@dimen/font_large1"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_into_money_gifts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_padding_small2"
+        app:cardCornerRadius="@dimen/common_padding_small2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivBuyMoneyGifts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/buy_money_gift_small_v1"
+                tools:ignore="MissingConstraints" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="@id/ivBuyMoneyGifts"
+                app:layout_constraintEnd_toEndOf="@id/ivBuyMoneyGifts"
+                app:layout_constraintStart_toStartOf="@id/ivBuyMoneyGifts"
+                app:layout_constraintTop_toTopOf="@id/ivBuyMoneyGifts">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:layout_marginStart="@dimen/common_padding_medium1"
+                    android:layout_marginTop="@dimen/common_padding_large">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/money_gift_white"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/common_padding_small2"
+                        android:text="@string/buy_money_gifts"
+                        android:textColor="@color/white_text"
+                        android:textSize="@dimen/font_medium2"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/common_padding_medium1"
+                    android:layout_marginTop="@dimen/common_padding_medium"
+                    android:lineSpacingExtra="@dimen/font_small0"
+                    android:text="@string/buy_money_gifts_description"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/white_text"
+                    android:textSize="@dimen/font_medium2" />
+
+
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_into_coin_gifts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_padding_large"
+        app:cardCornerRadius="@dimen/common_padding_small2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivBuyCoinGifts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/buy_coin_gift_small_v1"
+                tools:ignore="MissingConstraints" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="@id/ivBuyCoinGifts"
+                app:layout_constraintEnd_toEndOf="@id/ivBuyCoinGifts"
+                app:layout_constraintStart_toStartOf="@id/ivBuyCoinGifts"
+                app:layout_constraintTop_toTopOf="@id/ivBuyCoinGifts">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/common_padding_medium1"
+                    android:layout_marginTop="@dimen/common_padding_large"
+                    android:gravity="top">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/coin_gift_white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/common_padding_small2"
+                        android:text="@string/buy_coin_gifts"
+                        android:textColor="@color/white_text"
+                        android:textSize="@dimen/font_medium2"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/common_padding_medium1"
+                    android:layout_marginTop="@dimen/common_padding_medium"
+                    android:lineSpacingExtra="@dimen/font_small0"
+                    android:text="@string/buy_coin_gift_description"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/white_text"
+                    android:textSize="@dimen/font_medium2" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+
+
+</ScrollView>

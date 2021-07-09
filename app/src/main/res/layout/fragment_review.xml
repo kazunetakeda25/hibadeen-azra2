@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.room.ReviewFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_padding_small2"
+                >
+
+                <ImageView
+                    android:id="@+id/ivBackBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:src="@drawable/chevron_left"
+                    android:layout_marginStart="@dimen/common_padding_small2"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/review_rating"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:textSize="@dimen/font_medium2"
+                    android:textColor="@color/black_text"
+                    android:fontFamily="@font/poppins_semibold"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_padding_large"
+                android:text="@string/review_explain"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black_text"
+                android:textSize="@dimen/font_medium"
+                />
+
+            <TextView
+                android:id="@+id/tvAgentName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="with Jasmine"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black_text"
+                android:textSize="@dimen/font_medium"
+                />
+
+            <RatingBar
+                android:id="@+id/rbReviewStar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_padding_medium1"
+                android:layout_gravity="center_horizontal"
+                android:numStars="5"
+                android:progressTint="@color/yellow_500"
+                android:rating="3.5"
+                android:stepSize="0.5"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_padding_large"
+                android:text="@string/spicy_level"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black_text"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_padding_small2"
+                android:layout_gravity="center_horizontal"
+                app:cardCornerRadius="@dimen/common_padding_small1"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transGray"
+                    android:padding="@dimen/common_padding_small1">
+
+                    <ImageView
+                        android:id="@+id/pepperGreen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/pepper_green_disabled"/>
+
+                    <ImageView
+                        android:id="@+id/pepperOrange"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/pepper_orange_disabled"/>
+
+                    <ImageView
+                        android:id="@+id/pepperRed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/pepper_red_disabled"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/common_padding_small2"
+                android:layout_marginStart="@dimen/common_padding_small2"
+                android:layout_marginEnd="@dimen/common_padding_small2"
+                android:layout_marginTop="@dimen/common_padding_large"
+                app:cardBackgroundColor="@color/grey_100">
+
+                <EditText
+                    android:id="@+id/etReview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/common_padding_small2"
+                    android:background="@null"
+                    android:hint="@string/write_experience"
+                    android:inputType="textMultiLine"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvSendReview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                app:cardCornerRadius="@dimen/common_padding_medium"
+                android:layout_marginTop="@dimen/common_padding_medium"
+                android:layout_marginBottom="@dimen/common_padding_large"
+                app:cardBackgroundColor="@color/btnEnableColor"
+                >
+
+                <TextView
+                    android:id="@+id/tvSendReview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/common_padding_medium"
+                    android:paddingBottom="@dimen/common_padding_medium"
+                    android:paddingStart="@dimen/common_padding_large3"
+                    android:paddingEnd="@dimen/common_padding_large3"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/send_review"
+                    android:textColor="@color/white_text"
+                    />
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
